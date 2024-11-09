@@ -11,7 +11,7 @@ public class Plant implements Comparable<Plant> {
 
 
     //vytvorenie 3 konstruktorov:
-    //1.konstruktor pre nastavenie vsetkych atributov_:
+    //1.konstruktor pre nastavenie vsetkych atributov__:
     public Plant(String name, String notes, int frequency_of_watering, LocalDate watering, LocalDate planted)
             throws PlantException {
         this.name = name;

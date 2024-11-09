@@ -1,6 +1,6 @@
 //Osetrenie nespravneho vstupu:
 //Vytvor novu triedu vynimok s nazvom PlantException, bude potomkom (extends)
-//triedy Exception_,
+//triedy Exception__,
 public class PlantException extends Exception {
     public PlantException(String message) {
         super(message);

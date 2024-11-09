@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.*;
 
 
-//sprava zoznamu kvetin__:
+//sprava zoznamu kvetin___:
 public class PlantManager {
     private Plant plant;
     private List<Plant> plants1 = new ArrayList<>();
