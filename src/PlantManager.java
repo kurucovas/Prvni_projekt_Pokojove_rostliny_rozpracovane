@@ -5,14 +5,14 @@ import java.time.LocalDate;
 import java.util.*;
 
 
-//sprava zoznamu kvetin_:
+//sprava zoznamu kvetin__:
 public class PlantManager {
     private Plant plant;
     private List<Plant> plants1 = new ArrayList<>();
     private List<Plant> plants2 = new ArrayList<>();
     private List<Plant> plants3 = new ArrayList<>();
 
-    //vytvorenie metod:
+    //vytvorenie metod_:
     public void addPlant(Plant plant) {
         plants1.add(plant);
     }

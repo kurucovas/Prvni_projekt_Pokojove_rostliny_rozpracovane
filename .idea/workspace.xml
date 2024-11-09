@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prvni_projekt_Pokojove_rostliny.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/kvetiny-spatne-datum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/kvetiny-spatne-frekvence.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/kvetiny.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlantException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlantManager.java" afterDir="false" />
+    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar&#10;&#10;Pridala som komentar pre publikovanie zmien">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlantException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlantManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kurucovas"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kurucovas/Prvni_projekt_Pokojove_rostliny_rozpracovane.git",
+    "accountId": "fd55021a-c2b3-4264-bcb3-6dfca68574d1"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -67,7 +71,20 @@
       <option name="presentableId" value="Default" />
       <updated>1730304646290</updated>
     </task>
+    <task id="LOCAL-00001" summary="Komentar&#10;&#10;Pridala som komentar pre publikovanie zmien">
+      <option name="closed" value="true" />
+      <created>1731175106194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731175106194</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Komentar&#10;&#10;Pridala som komentar pre publikovanie zmien" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komentar&#10;&#10;Pridala som komentar pre publikovanie zmien" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -25,7 +25,7 @@ public class Main {
         manager.readFromFile("resources/kvetiny.txt", DELIMITER);
         //manager.getPlants1().forEach(System.out::println);
     }
-    //private static void fillPlants (PlantManager manager) {}
+    //private static void fillPlants (PlantManager manager)_ {}
 
 
 }
