@@ -1,13 +1,11 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.time.LocalDate;
 import java.util.*;
 
 
 //sprava zoznamu kvetin___:
 public class PlantManager {
-    private Plant plant;
+    public Plant plant;
     private List<Plant> plants1 = new ArrayList<>();
     private List<Plant> plants2 = new ArrayList<>();
     private List<Plant> plants3 = new ArrayList<>();
@@ -17,7 +15,7 @@ public class PlantManager {
         plants1.add(plant);
     }
 
-    public void removePlant(Plant plant) {
+    public void removePlant(int index) {
         plants1.remove(plant);
     }
 
@@ -50,10 +48,12 @@ public class PlantManager {
     public void sort(Comparator<Plant> comparator) {
         plants1.sort(comparator);
     }
+
     //tato metoda suvisi s metodou demoReadFromFile:
     public List<Plant> getPlants1() {
         return plants1;
     }
+
 
     // vytvor metodu pre nacitanie kvetin zo suboru:
     public void readFromFile(String filename, String delimiter) throws PlantException {
@@ -71,4 +71,17 @@ public class PlantManager {
                     "Subor " + filename + " nebol najdeny!\n" + e.getLocalizedMessage());
         }
     }
-}
+
+    //vytvor metodu pre ulozenie kvetin do suboru:
+    public void saveToFile(String filename, String delimiter) throws PlantException {
+        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)))) {
+                for(Plant plant : plants1){
+                    writer.println(plant.toFileString(delimiter));
+                }
+        } catch(IOException e) {
+            throw new PlantException("Subor " +filename+ "nebol najdeny!\n"+
+                    e.getLocalizedMessage());
+            }
+        }
+    }
+

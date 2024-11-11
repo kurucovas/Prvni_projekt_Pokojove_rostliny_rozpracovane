@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar_&#10;&#10;Pridala som komentar pre publikovanie zmien">
+    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien">
+      <change afterPath="$PROJECT_DIR$/resources/kvetiny2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/kvetiny.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlantException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantException.java" afterDir="false" />
@@ -25,18 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kurucovas"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kurucovas&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kurucovas/Prvni_projekt_Pokojove_rostliny_rozpracovane.git",
-    "accountId": "fd55021a-c2b3-4264-bcb3-6dfca68574d1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kurucovas/Prvni_projekt_Pokojove_rostliny_rozpracovane.git&quot;,
+    &quot;accountId&quot;: &quot;fd55021a-c2b3-4264-bcb3-6dfca68574d1&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -48,7 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -86,35 +92,36 @@
       <option name="project" value="LOCAL" />
       <updated>1731175325334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien">
+      <option name="closed" value="true" />
+      <created>1731175549300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731175549300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Komentar&#10;&#10;Pridala som komentar pre publikovanie zmien" />
+    <MESSAGE value="Komentar__&#10;&#10;Pridala som komentar pre publikovanie zmien" />
     <MESSAGE value="Komentar_&#10;&#10;Pridala som komentar pre publikovanie zmien" />
-    <option name="LAST_COMMIT_MESSAGE" value="Komentar_&#10;&#10;Pridala som komentar pre publikovanie zmien" />
+    <MESSAGE value="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="5" />
+          <line>25</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Plant.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Plant.java</url>
-          <line>113</line>
-          <properties class="Plant" method="parse">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -86,7 +86,7 @@ public class Plant implements Comparable<Plant> {
 
     //priprav metodu getWateringinfo, ktora vrati textovu info obsahujucu nazov
     //kvetiny, datum poslednej zalievky, datum doporucenej dalsej zalievky:
-    public String getWateringinfo() {
+    public String getWateringInfo() {
         String result = name + " watering: " + watering + " next watering: " + watering.plusDays(frequency_of_watering);
         return result;
     }
@@ -103,6 +103,18 @@ public class Plant implements Comparable<Plant> {
         return name.compareTo(otherPlant.name);
 
     }
+    //potrebna metoda pre spravne nacitanie obsahu suboru (Generate-toString) a
+    // vygenerovany text upravit:
+
+    @Override
+    public String toString () {
+        return name + "/t" +
+                notes + "/t" +
+                frequency_of_watering + "/t" +
+                watering + "/t" +
+                planted;}
+
+    //potrebna metoda pre zapis do suboru:
     public String toFileString (String delimiter) {
         return name + delimiter +
                 notes + delimiter +
