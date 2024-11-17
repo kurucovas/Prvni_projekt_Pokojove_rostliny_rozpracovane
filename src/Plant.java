@@ -126,7 +126,7 @@ public class Plant implements Comparable<Plant> {
                 planted;
     }
 
-    //vytvorenie metody parse:
+    //vytvorenie metody parse_:
     public static Plant parse(String line, int lineNumber, String delimiter) throws PlantException {
         int itemsRequired = 5;
         String[] parts = line.split(delimiter);

@@ -33,7 +33,7 @@ public class PlantManager  {
         return new ArrayList<>(plants1);
     }
 
-    //metoda, ktora vrati zoznam rastlin, ktore je treba polievat:
+    //metoda, ktora vrati zoznam rastlin, ktore je treba polievat_:
     public List<Plant> getPlantforWatering()
     {
         List<Plant> result = new ArrayList<>();

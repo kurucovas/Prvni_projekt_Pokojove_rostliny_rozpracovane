@@ -42,7 +42,7 @@ public class Main {
         manager.getWateringInfo_().forEach(System.out::println);
         System.out.println();
 
-        //pridaj novu kvetinu do zoznamu:
+        //pridaj novu kvetinu do zoznamu_:
         manager.addPlant(new Plant("Margaretka", "oblubeny kvet", 13,
                 LocalDate.of(2024, 11, 18), LocalDate.of(2024, 11, 5)));
         manager.addPlant(new Plant("Tulipan na prodej 1", 14));

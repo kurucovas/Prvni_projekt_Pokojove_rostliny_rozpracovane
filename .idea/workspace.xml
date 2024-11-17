@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar____&#10;&#10;aktualizovane subory">
-      <change afterPath="$PROJECT_DIR$/resources/kvetinybkp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/kvetiny2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny2.txt" afterDir="false" />
+    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar&#10;&#10;odovzdany prvy projekt">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlantException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantException.java" afterDir="false" />
@@ -108,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731363592031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Komentar&#10;&#10;odovzdany prvy projekt">
+      <option name="closed" value="true" />
+      <created>1731877563410</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731877563410</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,7 +122,8 @@
     <MESSAGE value="Komentar_&#10;&#10;Pridala som komentar pre publikovanie zmien" />
     <MESSAGE value="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien" />
     <MESSAGE value="Komentar____&#10;&#10;aktualizovane subory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Komentar____&#10;&#10;aktualizovane subory" />
+    <MESSAGE value="Komentar&#10;&#10;odovzdany prvy projekt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komentar&#10;&#10;odovzdany prvy projekt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
