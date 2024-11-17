@@ -3,45 +3,74 @@ import java.time.LocalDate;
 import java.util.*;
 
 
-//sprava zoznamu kvetin___:
-public class PlantManager {
-    public Plant plant;
+//sprava zoznamu kvetin:
+public class PlantManager  {
+    private Plant plant;
     private List<Plant> plants1 = new ArrayList<>();
     private List<Plant> plants2 = new ArrayList<>();
     private List<Plant> plants3 = new ArrayList<>();
 
-    //vytvorenie metod_:
+    //vytvorenie metod:
+
     public void addPlant(Plant plant) {
         plants1.add(plant);
-    }
-
-    public void removePlant(int index) {
-        plants1.remove(plant);
     }
 
     public Plant get(int index) {
         return plants1.get(index);
     }
 
-    //ziskani kopie seznamu kvetin:
+    public void removePlant(int index) {
+        plants1.remove(index);
+    }
+
+    public void removeallPlant () {
+        plants1.clear();
+    }
+
+    //metoda pre ziskanie kopie zoznamu kvetin:
     public List<Plant> getCopyPlants1() {
         return new ArrayList<>(plants1);
     }
-    //metoda,ktera vrati seznam rostlin, ktere je treba polievat:
 
-    public List<Plant> getPlantWithNextWatering(String name) {
+    //metoda, ktora vrati zoznam rastlin, ktore je treba polievat:
+    public List<Plant> getPlantforWatering()
+    {
         List<Plant> result = new ArrayList<>();
-        for (Plant plant : plants1) {
-            LocalDate nextWatering = plant.getWatering().plusDays(plant.getFrequency_of_watering());
-            if (nextWatering.isEqual(LocalDate.now())) {
+        int i = 0;
+        for (Plant plant : plants1)
+        {
+            LocalDate watering = plants1.get(i).getWatering();
+            LocalDate nextWatering = watering.plusDays(plants1.get(i).getFrequency_of_watering());
+            if (nextWatering.isBefore(LocalDate.now()) || nextWatering.isEqual(LocalDate.now()))
+            {
                 result.add(plant);
             }
+            i++;
         }
         return result;
     }
 
-    //zoradit rastliny v zozname:
-    public void sort() {
+    //metoda, ktora vrati informacie o zalievke kvetin:
+    public List<String> getWateringInfo_ () {
+        List<String> result = new ArrayList<>();
+        int i = 0;
+        for ( Plant plant : plants1 ) {
+
+            String name = plants1.get(i).getName();
+            LocalDate watering = plants1.get(i).getWatering();
+            LocalDate nextWatering = watering.plusDays(plants1.get(i).getFrequency_of_watering());
+
+            {
+               result.add(name + " watering:" + watering + " nextWatering:" + nextWatering);
+                i++;
+            }
+        }
+            return result;
+        }
+
+    //metody pre zoradenie rastlin v zozname (treba pridat aj "implements Comparable" do public class Plant):
+    public void sort () {
         plants1.sort(null);
     }
 
@@ -49,13 +78,12 @@ public class PlantManager {
         plants1.sort(comparator);
     }
 
-    //tato metoda suvisi s metodou demoReadFromFile:
+    //metoda, ktora vrati zoznam rastlin:
     public List<Plant> getPlants1() {
-        return plants1;
+        return new ArrayList<>(plants1);
     }
 
-
-    // vytvor metodu pre nacitanie kvetin zo suboru:
+    // vytvor metodu pre nacitanie kvetin zo suboru (metoda String toString v subore Plant.java):
     public void readFromFile(String filename, String delimiter) throws PlantException {
         try (Scanner scanner = new Scanner(
                 new BufferedReader(new FileReader(filename)))) {
@@ -64,24 +92,22 @@ public class PlantManager {
                 String line = scanner.nextLine();
                 //String delimiter = "\t";
                 lineNumber++;
-                System.out.println(Plant.parse(line, lineNumber, delimiter));
+                plants1.add(Plant.parse(line, lineNumber, delimiter));
             }
         } catch (FileNotFoundException e) {
             throw new PlantException(
                     "Subor " + filename + " nebol najdeny!\n" + e.getLocalizedMessage());
         }
     }
-
-    //vytvor metodu pre ulozenie kvetin do suboru:
+    //vytvor metodu pre ulozenie kvetin do suboru (metoda String toFileString v subore Plant.java):
     public void saveToFile(String filename, String delimiter) throws PlantException {
         try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(filename)))) {
-                for(Plant plant : plants1){
-                    writer.println(plant.toFileString(delimiter));
-                }
-        } catch(IOException e) {
-            throw new PlantException("Subor " +filename+ "nebol najdeny!\n"+
+            for (Plant plant : plants1) {
+                writer.println(plant.toFileString(delimiter));
+            }
+        } catch (IOException e) {
+            throw new PlantException("Subor " + filename + "nebol najdeny!\n" +
                     e.getLocalizedMessage());
+        }
             }
         }
-    }
-

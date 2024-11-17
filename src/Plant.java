@@ -1,5 +1,7 @@
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 //vytvorenie triedy Plant a jej atributov:
 public class Plant implements Comparable<Plant> {
@@ -9,9 +11,8 @@ public class Plant implements Comparable<Plant> {
     private LocalDate watering;
     private LocalDate planted;
 
-
     //vytvorenie 3 konstruktorov:
-    //1.konstruktor pre nastavenie vsetkych atributov__:
+    //1.konstruktor pre nastavenie vsetkych atributov:
     public Plant(String name, String notes, int frequency_of_watering, LocalDate watering, LocalDate planted)
             throws PlantException {
         this.name = name;
@@ -19,7 +20,6 @@ public class Plant implements Comparable<Plant> {
         this.planted = planted;
         this.setWatering(watering);
         this.setFrequency_of_watering(frequency_of_watering);
-
     }
 
     //2.konstruktor nastavi ako notes prazdny retazec a datumy na dnesny datum:
@@ -32,6 +32,7 @@ public class Plant implements Comparable<Plant> {
     public Plant(String name) throws PlantException {
         this(name, "", 7, LocalDate.now(), LocalDate.now());
     }
+
     //vytvor vychodzi pristupove metody pro vsechny atributy:
 
     public String getName() {
@@ -62,11 +63,11 @@ public class Plant implements Comparable<Plant> {
         return watering;
     }
 
-    //osetrenie chyboveho stavu:
+    //osetrenie chyboveho stavu v metode setWatering:
 
     public void setWatering(LocalDate watering) throws PlantException {
         if (watering.isBefore(planted)) {
-            throw new PlantException("Date of watering can not be before date of planted" );
+            throw new PlantException("Date of watering can not be before date of planted");
         }
         this.watering = watering;
     }
@@ -75,11 +76,11 @@ public class Plant implements Comparable<Plant> {
         return frequency_of_watering;
     }
 
-    //osetrenie chyboveho stavu:
+    //osetrenie chyboveho stavu v metode setFrequency_of_watering:
 
     public void setFrequency_of_watering(int frequency_of_watering) throws PlantException {
         if (frequency_of_watering <= 0) {
-            throw new PlantException("Frequency of watering can not be less than zero or equal to zero" );
+            throw new PlantException("Frequency of watering can not be less than zero or equal to zero");
         }
         this.frequency_of_watering = frequency_of_watering;
     }
@@ -92,9 +93,10 @@ public class Plant implements Comparable<Plant> {
     }
 
     //priprav metodu doWateringNow, ktora nastavi watering na dnesny den:
-    public LocalDate doWateringNow() {
+    public String doWateringNow() {
         watering = LocalDate.now();
-        return watering;
+        String result = name + "/t" + notes + "/t" + frequency_of_watering + "/t" + watering + "/t" + planted;
+        return result;
     }
 
     //zoradovanie podla nazvu rastliny ako vychodzia varianta zoradovania rastlin:
@@ -107,20 +109,22 @@ public class Plant implements Comparable<Plant> {
     // vygenerovany text upravit:
 
     @Override
-    public String toString () {
+    public String toString() {
         return name + "/t" +
                 notes + "/t" +
                 frequency_of_watering + "/t" +
                 watering + "/t" +
-                planted;}
+                planted;
+    }
 
     //potrebna metoda pre zapis do suboru:
-    public String toFileString (String delimiter) {
+    public String toFileString(String delimiter) {
         return name + delimiter +
                 notes + delimiter +
                 frequency_of_watering + delimiter +
                 watering + delimiter +
-                planted;}
+                planted;
+    }
 
     //vytvorenie metody parse:
     public static Plant parse(String line, int lineNumber, String delimiter) throws PlantException {
@@ -129,7 +133,7 @@ public class Plant implements Comparable<Plant> {
         if (parts.length != itemsRequired) {
             throw new PlantException(
                     "Nespravny pocet poloziek na riadku cislo: " + lineNumber + " Ocakavame " + itemsRequired +
-                            " poloziek" );
+                            " poloziek");
         }
         String name = parts[0].trim();
         String notes = parts[1].trim();
@@ -142,5 +146,9 @@ public class Plant implements Comparable<Plant> {
             throw new PlantException("Chybny format cisla/datumu na riadku cislo: " + lineNumber);
         }
     }
-
 }
+
+
+
+
+

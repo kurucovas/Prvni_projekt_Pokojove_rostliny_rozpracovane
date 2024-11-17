@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien">
-      <change afterPath="$PROJECT_DIR$/resources/kvetiny2.txt" afterDir="false" />
+    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar____&#10;&#10;aktualizovane subory">
+      <change afterPath="$PROJECT_DIR$/resources/kvetinybkp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/kvetiny.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/kvetiny2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlantException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantException.java" afterDir="false" />
@@ -41,7 +41,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -54,7 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -100,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731175549300</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Komentar____&#10;&#10;aktualizovane subory">
+      <option name="closed" value="true" />
+      <created>1731363592031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731363592031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,22 +116,39 @@
     <MESSAGE value="Komentar__&#10;&#10;Pridala som komentar pre publikovanie zmien" />
     <MESSAGE value="Komentar_&#10;&#10;Pridala som komentar pre publikovanie zmien" />
     <MESSAGE value="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien" />
-    <option name="LAST_COMMIT_MESSAGE" value="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien" />
+    <MESSAGE value="Komentar____&#10;&#10;aktualizovane subory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komentar____&#10;&#10;aktualizovane subory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="15" />
+          <line>32</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="19" />
+          <line>17</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="PlantManager" memberName="cplant" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="manager" />
+        <watch expression="manager" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
