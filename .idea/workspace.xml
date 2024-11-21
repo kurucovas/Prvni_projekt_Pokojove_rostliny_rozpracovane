@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar&#10;&#10;odovzdany prvy projekt">
+    <list default="true" id="0a992ee1-cb45-487c-bc32-e0a7261e8508" name="Changes" comment="Komentar_&#10;&#10;odovzdany prvy projekt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/kvetiny2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlantException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantException.java" afterDir="false" />
@@ -49,16 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Erik Kuruc/IdeaProjects/Prvni_projekt_Pokojove_rostliny/resources",
-    "onboarding.tips.debug.path": "C:/Users/Erik Kuruc/IdeaProjects/Prvni_projekt_Pokojove_rostliny/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Erik Kuruc/IdeaProjects/Prvni_projekt_Pokojove_rostliny/resources&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Erik Kuruc/IdeaProjects/Prvni_projekt_Pokojove_rostliny/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Erik Kuruc\IdeaProjects\Prvni_projekt_Pokojove_rostliny\resources" />
@@ -113,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731877563410</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Komentar_&#10;&#10;odovzdany prvy projekt">
+      <option name="closed" value="true" />
+      <created>1731877734104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731877734104</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,25 +133,21 @@
     <MESSAGE value="Komentar___&#10;&#10;Pridala som komentar pre publikovanie zmien" />
     <MESSAGE value="Komentar____&#10;&#10;aktualizovane subory" />
     <MESSAGE value="Komentar&#10;&#10;odovzdany prvy projekt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Komentar&#10;&#10;odovzdany prvy projekt" />
+    <MESSAGE value="Komentar_&#10;&#10;odovzdany prvy projekt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Komentar_&#10;&#10;odovzdany prvy projekt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="40" />
+          <line>41</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="42" />
+          <line>39</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

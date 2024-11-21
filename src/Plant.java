@@ -3,37 +3,30 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-//vytvorenie triedy Plant a jej atributov:
+
 public class Plant implements Comparable<Plant> {
     private String name;
     private String notes;
-    private int frequency_of_watering;
+    private int frequencyOfWatering;
     private LocalDate watering;
     private LocalDate planted;
 
-    //vytvorenie 3 konstruktorov:
-    //1.konstruktor pre nastavenie vsetkych atributov:
-    public Plant(String name, String notes, int frequency_of_watering, LocalDate watering, LocalDate planted)
+    public Plant(String name, String notes, int frequencyOfWatering, LocalDate watering, LocalDate planted)
             throws PlantException {
         this.name = name;
         this.notes = notes;
         this.planted = planted;
         this.setWatering(watering);
-        this.setFrequency_of_watering(frequency_of_watering);
+        this.setFrequencyOfWatering(frequencyOfWatering);
     }
 
-    //2.konstruktor nastavi ako notes prazdny retazec a datumy na dnesny datum:
-    public Plant(String name, int frequency_of_watering) throws PlantException {
-        this(name, "", frequency_of_watering, LocalDate.now(), LocalDate.now());
+    public Plant(String name, int frequencyOfWatering) throws PlantException {
+        this(name, "", frequencyOfWatering, LocalDate.now(), LocalDate.now());
     }
 
-    //3.konstruktor = predosly + vychodzia frekvencia zalievky 7 dni
-    // uzivatel teda zada iba nazov rastliny:
     public Plant(String name) throws PlantException {
         this(name, "", 7, LocalDate.now(), LocalDate.now());
     }
-
-    //vytvor vychodzi pristupove metody pro vsechny atributy:
 
     public String getName() {
         return name;
@@ -63,8 +56,6 @@ public class Plant implements Comparable<Plant> {
         return watering;
     }
 
-    //osetrenie chyboveho stavu v metode setWatering:
-
     public void setWatering(LocalDate watering) throws PlantException {
         if (watering.isBefore(planted)) {
             throw new PlantException("Date of watering can not be before date of planted");
@@ -72,61 +63,50 @@ public class Plant implements Comparable<Plant> {
         this.watering = watering;
     }
 
-    public int getFrequency_of_watering() {
-        return frequency_of_watering;
+    public int getFrequencyOfWatering() {
+        return frequencyOfWatering;
     }
 
-    //osetrenie chyboveho stavu v metode setFrequency_of_watering:
-
-    public void setFrequency_of_watering(int frequency_of_watering) throws PlantException {
-        if (frequency_of_watering <= 0) {
+    public void setFrequencyOfWatering(int frequencyOfWatering) throws PlantException {
+        if (frequencyOfWatering <= 0) {
             throw new PlantException("Frequency of watering can not be less than zero or equal to zero");
         }
-        this.frequency_of_watering = frequency_of_watering;
+        this.frequencyOfWatering = frequencyOfWatering;
     }
 
-    //priprav metodu getWateringinfo, ktora vrati textovu info obsahujucu nazov
-    //kvetiny, datum poslednej zalievky, datum doporucenej dalsej zalievky:
     public String getWateringInfo() {
-        String result = name + " watering: " + watering + " next watering: " + watering.plusDays(frequency_of_watering);
+        String result = name + " watering: " + watering + " next watering: " + watering.plusDays(frequencyOfWatering);
         return result;
     }
 
-    //priprav metodu doWateringNow, ktora nastavi watering na dnesny den:
     public String doWateringNow() {
         watering = LocalDate.now();
-        String result = name + "/t" + notes + "/t" + frequency_of_watering + "/t" + watering + "/t" + planted;
+        String result = name + "\t" + notes + "\t" + frequencyOfWatering + "\t" + watering + "\t" + planted;
         return result;
     }
 
-    //zoradovanie podla nazvu rastliny ako vychodzia varianta zoradovania rastlin:
     @Override
     public int compareTo(Plant otherPlant) {
         return name.compareTo(otherPlant.name);
-
     }
-    //potrebna metoda pre spravne nacitanie obsahu suboru (Generate-toString) a
-    // vygenerovany text upravit:
 
     @Override
     public String toString() {
-        return name + "/t" +
-                notes + "/t" +
-                frequency_of_watering + "/t" +
-                watering + "/t" +
+        return name + "\t" +
+                notes + "\t" +
+                frequencyOfWatering + "\t" +
+                watering + "\t" +
                 planted;
     }
 
-    //potrebna metoda pre zapis do suboru:
     public String toFileString(String delimiter) {
         return name + delimiter +
                 notes + delimiter +
-                frequency_of_watering + delimiter +
+                frequencyOfWatering + delimiter +
                 watering + delimiter +
                 planted;
     }
 
-    //vytvorenie metody parse_:
     public static Plant parse(String line, int lineNumber, String delimiter) throws PlantException {
         int itemsRequired = 5;
         String[] parts = line.split(delimiter);
@@ -138,10 +118,10 @@ public class Plant implements Comparable<Plant> {
         String name = parts[0].trim();
         String notes = parts[1].trim();
         try {
-            int frequency_of_watering = Integer.parseInt(parts[2]);
+            int frequencyOfWatering = Integer.parseInt(parts[2].trim());
             LocalDate watering = LocalDate.parse(parts[3].trim());
             LocalDate planted = LocalDate.parse(parts[4].trim());
-            return new Plant(name, notes, frequency_of_watering, watering, planted);
+            return new Plant(name, notes, frequencyOfWatering, watering, planted);
         } catch (NumberFormatException | DateTimeParseException e) {
             throw new PlantException("Chybny format cisla/datumu na riadku cislo: " + lineNumber);
         }
